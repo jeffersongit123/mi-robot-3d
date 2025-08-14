@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot 3D Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Cargando robot...</p>
+    </div>
+
+    <!-- Status indicator -->
+    <div id="status" class="status" style="display: none;"></div>
+
+    <!-- Control Panel -->
+    <div id="ui">
+        <div class="control-group">
+            <h3>🎮 Movimiento</h3>
+            <div class="button-group">
+                <button class="control-btn" id="up">↑</button>
+                <button class="control-btn" id="left">←</button>
+                <button class="control-btn" id="down">↓</button>
+                <button class="control-btn" id="right">→</button>
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <h3>🚀 Acciones</h3>
+            <button class="action-btn" id="jump">Saltar</button>
+            <button class="action-btn toggle-btn" id="dance">Bailar</button>
+            <button class="action-btn" id="reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="info">
+        <h4>🎯 Controles:</h4>
+        <p><span class="key-hint">Flechas/WASD</span> - Mover</p>
+        <p><span class="key-hint">Espacio</span> - Saltar</p>
+        <p><span class="key-hint">Q</span> - Bailar</p>
+        <p><span class="key-hint">R</span> - Reset</p>
+        <p><span class="key-hint">Mouse</span> - Cámara</p>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
